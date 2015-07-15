@@ -1,0 +1,144 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8, top=0.5cm, bottom=1.5cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Sangwoo}
+\familyname{Kim}
+\phone[mobile]{+82~10~9772~7213}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{newksw121@gmail.com}                               % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle%
+\vspace*{-10mm}
+
+\section{Education}
+\cventry{2010--2015}{B.S. in Computer Science and Engineering}{Seoul National University}{Seoul, Korea}{GPA in major 3.41/4.3}
+{Department of Computer Science and Engineering Scholarship\\
+National Science and Engineering Scholarship\\
+Seoul National University Alumni Association Scholarship}
+
+\section{Experience}
+\cventry{Mar.2014--present}{Software Engineer}{R.O.K. Cyber Command}{Seoul, Korea}{}
+{\begin{itemize}%
+    \item Led real-time chatting service using vertex in java and angularJS
+    \item Rebuilt above service with Lift in scala to make the service also work in IE8
+    \item Improved emergency response system which broadcasts instructions from command to lower units in java servlet 
+\end{itemize}} 
+
+\cventry{July.2013--Dec.2013}{App Developer}{UK works}{Seoul, Korea}{}
+{\begin{itemize}%
+    \item Developed native Android application which shows 1+1 event products in convenience store
+    \item Developed API server which provides informations of products using Django in python
+\end{itemize}}
+
+\cventry{Mar.2013--Jun.2013}{Software Engineer}{Seoul National University}{Seoul, Korea}{}
+{Project team for Samsung Electronics
+  \begin{itemize}%
+    \item Modeled traffic simulation system interlocked with video decoder
+      \begin{itemize}
+        \item Modeled data buffer, bus(based in AMBA bus reference code) and simulation parameters
+      \end{itemize}
+    \item Designed simulator GUI and interface
+    \item Developed simulator which measures data traffic and shows the data in graph
+\end{itemize}}
+
+\cventry{Feb.2012--Aug.2012}{Web Developer}{Seoul National University}{Seoul, Korea}{}
+{Developed Department of Computer Science and Engineering website
+  \begin{itemize}%
+    \item Developed automation system for reservations and registrations using Drupal
+      \begin{itemize}%
+        \item Developed calendar UI which supports dragging to select time
+      \end{itemize}
+    \item Performed regular maintenenance of the website upon completion
+\end{itemize}}
+
+\cventry{Jul.2012--Sep.2012}{Student Researcher}{Seoul National University}{Seoul, Korea}{}
+{Interned at Distributed Computing Systems Laboratory
+  \begin{itemize}%
+    \item Improved caculating speed by monopolizing one CPU core
+      \begin{itemize}
+        \item Disabled irq by setting irq affinity to other CPUs
+        \item Bound particular function to monopolized CPU
+      \end{itemize}
+\end{itemize}}
+
+\section{Extra Curriculars}
+\cventry{Mar.2010--Present}{Member}{SNUPS}{Seoul, Korea}{}
+{\begin{itemize}%
+    \item Studied algorithmic problem solving
+    \item Prepared for ACM-ICPC
+\end{itemize}}
+
+\cventry{Mar.2012--Mar.2013}{Organizer}{TEDxSNU}{Seoul, Korea}{}
+{\begin{itemize}%
+    \item Developed TEDxSNU website using Wordpress
+    \item Liaised for a sponsor
+    \item Organized events and presentations
+\end{itemize}}
+
+\section{Awards \& Honors}
+\cventry{Jan.2015}{Commander(Major General)'s award for excellence in performance}{R.O.K. Cyber Command}{}{}{}
+\cventry{May.2011}{42nd Place}{The 35th Annual ACM-ICPC World Finals}{}{}{}
+\cventry{Oct.2010}{Gold medal}{The 10th Korean collegiate programming contest}{}{}{}
+
+\section{Others}
+\cvitem{Language}{Native Korean, Fluent English}
+\cvitem{Hobbies}{Sports dance (dancer of SNU sports dance club SPIN), Piano}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+\end{document}
+
+
+%% end of file `template.tex'.
