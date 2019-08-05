@@ -27,7 +27,7 @@
 \firstname{Sangwoo}
 \familyname{Kim}
 \phone[mobile]{+82~10~9772~7213}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\email{newksw121@gmail.com}                               % optional, remove / comment the line if not wanted
+\email{sangwoo.kim.1003@gmail.com}                 % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -48,43 +48,53 @@
 \vspace*{-10mm}
 
 \section{Education}
-\cventry{2010--2014}{B.S. in Computer Science and Engineering}{Seoul National University}{Seoul, Korea}{}
+\cventry{Mar.2010--Feb.2014}{B.S. in Computer Science and Engineering}{Seoul National University}{Seoul, Korea}{}
 {Department of Computer Science and Engineering Scholarship\\
 National Science and Engineering Scholarship\\
 Seoul National University Alumni Association Scholarship}
 
 \section{Experience}
-\cventry{Oct.2016--present}{Quantitative Researcher}{WorldQuant}{Seoul, Korea}{}
+\cventry{Jan.2018--present}{Senior Quantitative Researcher}{WorldQuant}{Seoul, Korea}{}
+{\begin{itemize}%
+    \item Developed signal combining module using mean-variance optimization and distributed the module to other researchers
+    \item Worked as an advisor for several researchers globally
+    \item Researched general signal improving methodology
+        \begin{itemize}%
+            \item Developed general operations which reduces turnover, balances long-short, improves liquidity etc.
+            \item Created multiple signals from one orignal signal with several operations, then combined signals to make improved signal
+        \end{itemize}
+\end{itemize}}
+
+\cventry{Oct.2016--Jan.2018}{Quantitative Researcher}{WorldQuant}{Seoul, Korea}{}
 {\begin{itemize}%
     \item Focused on the development of statistical arbitrage strategies within global markets
-    \item Developed automized signal fitting framework
-    \item Researched siganl combining method with several selecting criteria
+        \begin{itemize}%
+            \item Low turnover signals using fundamental, analyst estimates datasets
+            \item Medium turnover high sharpe signals using social media, sentiments datasets
+            \item Researched stock price uptrend checking functions with several datafields
+        \end{itemize}
+    \item Researched signal combining method
+        \begin{itemize}%
+            \item Filtered high quality signals from company signal pool with several criteria
+            \item Combined signals with mean-variance based optimization
+        \end{itemize}
 \end{itemize}}
 
 \cventry{Dec.2015--Oct.2016}{Quantitative Developer}{WorldQuant}{Seoul, Korea}{}
 {\begin{itemize}%
-    \item One of the first members in the Korea office, established on September 2015
-    \item Improved and maintained in-house dataset, which achieves better reliabliliy using datasets from vendors
-    \item Developed program which monitors dataset production
-    \item Researched statistical arbitrage strategies using genetic algorithm
+    \item Improved and maintained in-house fundamental dataset, which achieves better reliabliliy by combining datasets from different vendors
+    \item Developed dataset production monitoring system which monitors dataset coverage and turnover
 \end{itemize}}
 
 \cventry{Mar.2014--Dec.2015}{Software Engineer}{R.O.K. Cyber Command}{Seoul, Korea}{}
 {\begin{itemize}%
-    \item Led real-time chatting service using vertex in java and angularJS
+    \item Developed real-time chatting service using vertex in java and angularJS
     \item Rebuilt the service with Lift in scala to make the service also work in IE8
     \item Improved emergency response system which broadcasts instructions from command to lower units in java servlet
 \end{itemize}}
 
-\cventry{Mar.2013--Jun.2013}{Software Engineer}{Seoul National University}{Seoul, Korea}{}
-{Project team for Samsung Electronics
-  \begin{itemize}%
-    \item Modeled traffic simulation system interlocked with video decoder based on AMBA bus reference code
-    \item Developed simulator which measures data traffic and shows the data in graph
-\end{itemize}}
-
 \cventry{Jul.2012--Sep.2012}{Student Researcher}{Seoul National University}{Seoul, Korea}{}
-{Interned at Distributed Computing Systems Laboratory
+{Intern at Distributed Computing Systems Laboratory
   \begin{itemize}%
     \item Improved caculating speed by monopolizing one CPU core
       \begin{itemize}
@@ -111,10 +121,6 @@ Seoul National University Alumni Association Scholarship}
 \cventry{Jan.2015}{Commander(Major General)'s award for excellence in performance}{R.O.K. Cyber Command}{}{}{}
 \cventry{May.2011}{42nd Place}{The 35th Annual ACM-ICPC World Finals}{}{}{}
 \cventry{Oct.2010}{Gold medal}{The 10th Korean collegiate programming contest}{}{}{}
-
-\section{Others}
-\cvitem{Language}{Native Korean, Fluent English}
-\cvitem{Hobbies}{Sports dance, Piano}
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
